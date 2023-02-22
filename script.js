@@ -572,6 +572,7 @@ window.addEventListener('load', function () {
       context.fillText('Score: ' + this.score, 25, 50);
       if (this.debug) {
         context.fillText('Lost: ' + this.lostHatchlings, 25, 100);
+        context.fillText('FPS: ' + Math.floor(1000 / deltaTime), 25, 150);
       }
       context.restore();
 
